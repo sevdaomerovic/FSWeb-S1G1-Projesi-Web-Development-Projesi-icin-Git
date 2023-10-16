@@ -11,17 +11,27 @@ Eğer aradığın soruların cevapları GitHub docs'ta yoksa, Google'lama beceri
 ## Sorular
 
 1. Git nedir?
+   Açık kaynak kodlu bir versiyon kontrol sistemidir. Bir web sitesinin çeşitli geliştirme/güncellemeler öncesi ve sonrasında, sitenin geçirdiği tüm revizyonları görmemize olanak sağlayan bir sistemdir. Aynı anda birden fazla kullanıcının branch oluşturarak proje üzerinde çalışmasına olanak verir.
 
 2. Git ile GitHub arasında ne fark var?
+   Git bir versiyon kontrol sistemi iken, GitHub en yaygın kullanılan Git uygulamalarından biridir.
 
 3. Neden bir branch oluşturuyoruz?
+   Üzerinde çalıştığımız kaynak kodun orijinalini korumak, çalışmalarımız devam ederken diğer kullanıcıların da projenin orijinaline erişimlerini kaybetmemelerini sağlamak için branch oluşturuyoruz.
 
 4. Pull Request'in amacı nedir?
+   Kaynak üzerinde yaptığımız değişikliklerin master branche eklenmesi için proje yöneticisine onaya göndermektir.
 
 5. Bir Branchten diğerine geçmek için kullandığın KOMUT nedir? Mesela `isim-soyisim` branch'inde çalıştığını hayal et ve main branch'ine geçmek istiyorsun, ne yaparsın?
+   "git checkout main" komutunu kullanırız.
 
 6. `git fetch`, `git merge` ve `git pull` arasındaki farklıarı açıklayınız. Bu konutlar ne yapar açıklayınız.
+   git fetch : Başka bir sunucunun tüm içeriğini ve verilerini kendi sunucumuza çekmemizi sağlar.
+   git merge : Kendi bilgisayarımızda yaptığımız değişiklikleri main branche eklemeyi sağlar.
+   git pull : Başka bir sunucunun içeriği ve verilerini kendi sunucumuza çekmemizi sağlarken, Git fetch'ten farklı olarak bunu merge ederek yapmaktadır. Diğer sunucuda yapılan değişiklikleri kendi sunucumuzla kıyaslamadan verileri otomatik olarak merge eder.
 
 7. Merge conflict nedir?
+   Aynı dosyada aynı satırın/aynı verinin birden fazla kişi tarafından aynı anda güncellenmesi ve git'in otomatik olarak bunları merge edememesi durumuna merge conflict denir. Hangi revizenin kabul edilip hangi revizenin ignore edileceği belirsiz olduğu durumlarda merge conflict oluşur.
 
 8. Merge conflict'i nasıl çözeriz?
+   Merge conflicti çözmek için çakışmalı olan kısımların kullanıcı tarafından manuel olarak düzeltilmesi ve tekrar merge işlemi yapılması gerekir.
